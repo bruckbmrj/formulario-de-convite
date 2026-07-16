@@ -29,7 +29,7 @@
         <form enctype="multipart/form-data">
           <fieldset class="about">
             <legend>
-              <img src="" alt="">
+              <img src="assets/icons/calendar.svg" alt="">
               <span>Sobre o evento</span>
             </legend>
 
@@ -39,19 +39,19 @@
             </div>
 
             <div class="flex">
-                <div class="input-wrapper">
+                <div class="input-wrapper flex-1">
                   <label for="start">Início</label>
                   <input type="datetime-local" id="start" name="start">
                 </div>
 
-                <div class="input-wrapper">
+                <div class="input-wrapper flex-1">
                   <label for="end">Fim</label>
                   <input type="datetime-local" id="end" name="end">
                 </div>
               </div>
 
               <div class="flex">
-                <div class="input-wrapper">
+                <div class="input-wrapper flex-1">
                   <label>Tipo</label>
                   <div class="toggle-switch">
                     <!-- Opção Presencial -->
@@ -70,24 +70,24 @@
                   </div>
                 </div>
 
-                <div class="input-wrapper">
+                <div class="input-wrapper flex-1">
                   <label for="place">Local</label>
                   <input type="text" id="place" name="place" placeholder="Link ou endereço">
                 </div>
+              </div>
 
-                <div class="textarea-wrapper">
-                  <label for="description">Descrição</label>
-                  <textarea name="description" id="description"
-                    cols="30" rows="5"
-                    placeholder="Escreva sobre os detalhes do evento"
-                  ></textarea>
-                </div>
+              <div class="textarea-wrapper">
+                <label for="description">Descrição</label>
+                <textarea name="description" id="description"
+                  cols="30" rows="5"
+                  placeholder="Escreva sobre os detalhes do evento"
+                ></textarea>
               </div>
           </fieldset>
 
           <fieldset class="customize">
             <legend>
-              <img src="" alt="">
+              <img src="assets/icons/paintbrush.svg" alt="">
               <span>Personalização</span>
             </legend>
             <div class="input-wrapper">
@@ -244,7 +244,7 @@
 
           <fieldset class="contact">
             <legend>
-              <img src="" alt="">
+              <img src="assets/icons/contact.svg" alt="">
               <span>Dados para contato</span>
             </legend>
 
@@ -254,12 +254,12 @@
             </div>
 
             <div class="flex">
-              <div class="input-wrapper">
+              <div class="input-wrapper flex-1">
                 <label for="email">E-mail</label>
                 <input id="email" name="email" type="email" placeholder="exemplo@email.com">
               </div>
 
-              <div class="input-wrapper">
+              <div class="input-wrapper flex-1">
                 <label for="phone">Telefone</label>
                 <input id="phone" name="phone" type="phone" placeholder="(99) 99999-9999">
               </div>
