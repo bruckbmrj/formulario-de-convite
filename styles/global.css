@@ -17,8 +17,8 @@
   --heading-sm: 600 1.125rem var(--font-baloo);
 
   --body-md: 500 1rem var(--font-sans);
-  --body-sm: 500 0.875 var(--font-sans);
-  --body-xs: 500 0.75 var(--font-sans);
+  --body-sm: 500 0.875rem var(--font-sans);
+  --body-xs: 500 0.75rem var(--font-sans);
 
   /* Brand */
   --brand-light: #59B2FF;
@@ -53,6 +53,11 @@
   /* Text */
   --text-body: #C8CDD0;
   --text-heading: #F9F9F9;
+}
+
+body {
+  overflow: hidden;
+  background-color: var(--shape-background);
 }
 
 .flex {

@@ -1,0 +1,51 @@
+.file-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap; /* Permite que a mensagem de erro quebre para a linha de baixo */
+}
+
+.real-file-input {
+  display: none;
+}
+
+.file-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #212529;
+  border: 1px solid #343a40;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #e0e0e0;
+}
+
+.file-text {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* --- Controle Moderno da Mensagem de Erro --- */
+
+/* Por padrão, a mensagem de erro fica invisível e comprimida */
+.error-msg {
+  display: none;
+  align-items: center;
+  gap: 4px;
+  color: #dc3545;
+  font-size: 12px;
+  width: 100%; /* Força a mensagem a ir para baixo do botão */
+  margin-top: 4px;
+}
+
+/* O CSS moderno ativa a mensagem apenas se o container pai tiver a classe correspondente */
+.file-wrapper.status-error .error-msg {
+  display: flex;
+}
+
+/* Opcional: Se houver erro, podemos mudar a cor do texto do arquivo se você quiser */
+.file-wrapper.status-error .file-text {
+  color: #6c757d;
+}

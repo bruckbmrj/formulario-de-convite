@@ -1,0 +1,26 @@
+@import url(fields/index.css);
+
+form {
+  margin-top: 2.5rem;
+}
+
+fieldset{
+  border: none;
+  display: grid;
+  gap: 1rem;
+  legend {
+    font: var(--heading-sm);
+    color: var(--text-heading);
+    margin-bottom: 1.5rem;
+  }
+  .input-wrapper {
+    label {
+      font: var(--body-sm);
+      color: var(--text-body);
+    }
+  }
+}
+
+fieldset + fieldset {
+  margin-top: 3rem;
+}

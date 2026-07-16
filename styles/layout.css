@@ -8,6 +8,9 @@
 
 aside {
   background: url(../assets/background.png) center/cover no-repeat;
+  margin: 1.25rem;
+  margin-right: 0.625rem;
+  border-radius: 0.75rem;
   .aside-container {
     padding: 2rem;
     img {
@@ -22,5 +25,20 @@ aside {
         font: var(--body-md);
         color: var(--text-heading);
       }
+  }
+}
+
+main {
+  background-color: var(--shape-body);
+  overflow: auto;
+  margin: 1.25rem;
+  margin-left: 0.625rem;
+  border-radius: 0.75rem;
+  .main-container {
+    padding: 5rem 8.125rem;
+    h1 {
+      font: var(--heading-md);
+      color: var(--text-heading);
+    }
   }
 }
