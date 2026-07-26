@@ -1,0 +1,67 @@
+.radio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
+  gap: 0.5rem;
+}
+
+.radio-wrapper.main-color {
+  display: flex; /* Flexbox funciona melhor que grid aqui para evitar quebras estranhas */
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
+  .radio-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;  /* Ajusta o tamanho da área clicável */
+    height: 2.5rem;
+  }
+
+  .radio-inner input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.75rem;          /* Tamanho real da bolinha colorida */
+    height: 1.75rem;
+    border-radius: 50%;     /* Torna perfeitamente redondo */
+    border: none;           /* Reseta a borda do estilo geral */
+    outline: none;          /* Reseta o outline do estilo geral */
+    padding: 0;             /* Reseta o padding do estilo geral */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    
+    /* Cor de fundo padrão caso a variável falhe */
+    background-color: var(--text-heading); 
+
+    /* Sombra interna com a cor escura do seu fundo */
+    box-shadow: 0 0 0 4px var(--shape-button);
+  }
+
+  /* Cores específicas para cada opção */
+  #blue    { background-color: var(--brand-light); }
+  #navy    { background-color: var(--navy); }
+  #purple  { background-color: var(--purple); }
+  #fuchsia { background-color: var(--fuchsia); }
+  #pink    { background-color: var(--pink); }
+  #red     { background-color: var(--danger); }
+  #orange  { background-color: var(--orange); }
+  #yellow  { background-color: var(--yellow); }
+  #lime    { background-color: var(--lime); }
+  #green   { background-color: var(--green); }
+  #cyan    { background-color: var(--cyan); }
+
+  /* 4. Efeito de Hover */
+  .radio-inner input[type="radio"]:hover {
+    transform: scale(1.08);
+  }
+
+  /* 5. Efeito Selecionado (Anel Duplo idêntico ao Print) */
+  .radio-inner input[type="radio"]:checked {
+    
+    /* Anel externo luminoso usando a própria variável de cor azul do sistema */
+    outline: 2px solid var(--brand-light); 
+    
+    /* Afasta o anel sutilmente para criar o efeito de vão livre */
+    outline-offset: 3px; 
+  }
+
+}

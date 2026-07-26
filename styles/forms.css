@@ -21,3 +21,7 @@ fieldset{
 fieldset + fieldset {
   margin-top: 3rem;
 }
+
+fieldset .flex {
+  gap: 1rem;
+}

@@ -13,10 +13,18 @@ input, textarea, select {
 }
 
 .input-wrapper, .textarea-wrapper {
-    label {
-      font: var(--body-sm);
-      color: var(--text-body);
-      display: block;
-      margin-bottom: 0.75rem;
-    }
+  label {
+    font: var(--body-sm);
+    color: var(--text-body);
+    display: block;
+    margin-bottom: 0.75rem;
   }
+}
+
+input[type="datetime-local"] {
+  position: relative;
+
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}

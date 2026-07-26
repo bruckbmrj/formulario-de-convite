@@ -1,10 +1,12 @@
-.switch-item {
+label.switch-item {
+  appearance: none;
   display: inline-flex;
   align-items: center;
   gap: 12px;
   cursor: pointer;
   user-select: none;
   width: max-content;
+  position: relative;
 }
 
 /* Esconde o quadrado padrão do checkbox */
