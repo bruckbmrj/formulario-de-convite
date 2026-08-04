@@ -255,13 +255,21 @@
 
             <div class="input-wrapper">
               <label for="fullname">Nome</label>
-              <input id="fullname" name="fullname" type="text" placeholder="Nome completo">
+              <input id="fullname" name="fullname" type="text" placeholder="Nome completo" required>
+              <div class="error">
+                <img src="assets/icons/circle-alert.svg" alt="icone alerta vermelho">
+                <span>Campo obrigatório</span>
+              </div>
             </div>
 
             <div class="flex">
               <div class="input-wrapper flex-1">
                 <label for="email">E-mail</label>
-                <input id="email" name="email" type="email" placeholder="exemplo@email.com">
+                <input id="email" name="email" type="email" placeholder="exemplo@email.com" required>
+                <div class="error">
+                  <img src="assets/icons/circle-alert.svg" alt="icone alerta vermelho">
+                  <span>Insira um e-mail válido</span>
+                </div>
               </div>
 
               <div class="input-wrapper flex-1">
@@ -273,27 +281,29 @@
 
           <hr>
 
-          <div class="terms-wrapper input-wrapper checkbox-wrapper">
-            <div class="checkbox-image"></div>
-            <input type="checkbox" name="terms" id="terms">
-            <label for="terms">Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></label>
-          </div>
-
-          <div class="terms-wrapper input-wrapper checkbox-wrapper">
-            <div class="checkbox-image"></div>
-            <input type="checkbox" name="newsletter-email" id="newsletter-email">
-            <label for="newsletter-email">Aceito receber atualizações e promoções por e-mail</label>
-          </div>
-
-          <div class="terms-wrapper input-wrapper checkbox-wrapper">
-            <div class="checkbox-image"></div>
-            <input type="checkbox" name="newsletter-sms" id="newsletter-sms">
-            <label for="newsletter-sms">Aceito receber atualizações e promoções por SMS</label>
+          <div class="terms-wrapper">
+            <div class="input-wrapper checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms" id="terms">
+              <label for="terms">Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></label>
+            </div>
+  
+            <div class="input-wrapper checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="newsletter-email" id="newsletter-email">
+              <label for="newsletter-email">Aceito receber atualizações e promoções por e-mail</label>
+            </div>
+  
+            <div class="input-wrapper checkbox-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="newsletter-sms" id="newsletter-sms">
+              <label for="newsletter-sms">Aceito receber atualizações e promoções por SMS</label>
+            </div>
           </div>
 
           <div class="actions-wrapper">
             <button class="btn-primary" type="submit">
-              <img src="" alt="">
+              <img src="/assets/icons/ticket.svg" alt="">
               <span>Gerar convite</span>
             </button>
           </div>

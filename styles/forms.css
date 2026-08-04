@@ -29,3 +29,25 @@ fieldset .flex {
 fieldset.customize {
   gap: 1.5rem;
 }
+
+.actions-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+  gap: 1rem;
+
+  .btn-primary {
+    appearance: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    background-color: var(--brand-dark);
+    color: var(--text-heading);
+    &:hover {
+      background-color: var(--brand-mid);
+    }
+  }
+}

@@ -28,3 +28,24 @@ input[type="datetime-local"] {
     opacity: 0;
   }
 }
+
+input {
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    font: var(--body-xs);
+    color: var(--danger);
+
+    margin-top: 0.5rem;
+  }
+
+  &:not(:focus):valid + .error, &:not(:focus):empty + .error, &:valid + .error {
+    display: none;
+  }
+
+  &:user-invalid {
+    border-color: var(--danger);
+  }
+}
