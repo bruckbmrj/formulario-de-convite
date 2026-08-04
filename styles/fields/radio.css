@@ -10,6 +10,7 @@
   gap: 0.75rem;
 
   .radio-inner {
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,4 +65,39 @@
     outline-offset: 3px; 
   }
 
+}
+.radio-wrapper.theme-event {
+  .radio-inner {
+    background-color: var(--shape-button);
+    border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+
+    display: grid;
+    justify-items: center;
+    gap: .5rem;
+
+    padding: 0.25rem .25rem .5rem;
+
+    position: relative;
+    & input,
+    & input:focus,
+    & input:hover {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    &:hover, &:focus-within {
+      background-color: var(--shape-hover);
+    }
+
+    &:has(:checked) {
+      outline: 2px solid var(--brand-light);
+    }
+
+  }
 }

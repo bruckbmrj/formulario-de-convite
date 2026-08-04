@@ -2,7 +2,7 @@ label.switch-item {
   appearance: none;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
   cursor: pointer;
   user-select: none;
   width: max-content;
@@ -20,9 +20,9 @@ label.switch-item {
 /* O corpo do interruptor (A pílula de fundo) */
 .switch-pill {
   position: relative;
-  width: 44px;
-  height: 24px;
-  background-color: #2c3036; /* Cor desativada */
+  width: 4rem;
+  height: 2rem;
+  background-color: var(--input-base);
   border-radius: 50px;
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -31,11 +31,11 @@ label.switch-item {
 .switch-pill::before {
   content: "";
   position: absolute;
-  height: 18px;
-  width: 18px;
+  height: 1.5rem;
+  width: 1.5rem;
   left: 3px;
-  bottom: 3px;
-  background-color: #6c757d; /* Bolinha desativada */
+  bottom: 4px;
+  background-color: var(--input-stroke); /* Bolinha desativada */
   border-radius: 50%;
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s;
 }
@@ -44,23 +44,23 @@ label.switch-item {
 
 /* Altera a cor de fundo da pílula ao marcar */
 .real-switch:checked + .switch-pill {
-  background-color: #3b9eff; /* Azul luminoso da imagem */
+  background-color: var(--brand-light);
 }
 
 /* Altera a cor e move a bolinha interna para a direita */
 .real-switch:checked + .switch-pill::before {
-  transform: translateX(20px);
-  background-color: #ffffff; /* Bolinha branca quando ativa */
+  transform: translateX(2rem);
+  background-color: var(--text-heading); /* Bolinha branca quando ativa */
 }
 
 /* Texto ao lado do Switch */
 .switch-label-text {
-  font-size: 14px;
-  color: #e0e0e0;
-  transition: color 0.2s;
+  font-size: 0.875rem;
+  color: var(--text-heading);
+  transition: color 0.3s;
 }
 
 /* Opcional moderno: Muda o texto dinamicamente ou clareia se estiver ativo */
 .real-switch:checked ~ .switch-label-text {
-  color: #ffffff;
+  color: var(--text-body);
 }

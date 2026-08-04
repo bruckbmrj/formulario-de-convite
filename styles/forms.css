@@ -25,3 +25,7 @@ fieldset + fieldset {
 fieldset .flex {
   gap: 1rem;
 }
+
+fieldset.customize {
+  gap: 1.5rem;
+}
